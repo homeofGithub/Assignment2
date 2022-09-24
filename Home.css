@@ -1,0 +1,52 @@
+.box{
+    border: 1px white;
+    box-shadow: 3px 3px 3px 3px #1d1f19;
+    border-radius: 10px;
+}
+.containner{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.containter2{
+    padding-left: 300px;
+    padding-right: 300px;
+    grid-template-columns: 85%;
+}
+.addtion{
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.box2{
+    border: 1px rgb(0, 0, 0);
+    
+}
+.h2, h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+}
+.center2 {
+    
+    padding-left: 130px;
+}
+.center3 {
+    
+    padding-left: 430px;
+    padding-top: 30px;
+}
+
+.containter3{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 30% 70%;
+}
