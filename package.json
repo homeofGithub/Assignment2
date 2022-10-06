@@ -1,0 +1,36 @@
+{
+  "name": "assignment1",
+  "description": "Assignment1 and ExpressJS",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homeofGithub/Assignment1.git"
+  },
+  "keywords": [
+    "COMP299",
+    "MEAN",
+    "EXPRESS",
+    "EJS",
+    "NODEJS"
+  ],
+  "author": "EDDIE CHEN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homeofGithub/Assignment1/issues"
+  },
+  "homepage": "https://github.com/homeofGithub/Assignment1#readme",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
