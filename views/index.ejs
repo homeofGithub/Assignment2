@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
-  </head>
-  
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %> <%= name %></p>
-  </body>
-</html>
+<% include partials/header.ejs %>
+
+   
+
+    <% if(title == "Home"){  %>
+      <div class="containter2">
+        
+        
+        <h1 class="bg-primary">Our Mission Statements</h1>
+        &nbsp;
+        &nbsp;
+        <h3>“Our mission is to empower every person and every organization on the planet to achieve more, and
+            To connect the world's professionals to make them more productive and successful.”</h3>
+        
+      </div>
+      <% } %>

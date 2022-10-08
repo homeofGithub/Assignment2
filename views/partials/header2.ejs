@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+</head>
+<body>
+    
+    <div class="containner">
+        <div class="box box1">
+            <img src="https://i.ibb.co/DVvd8K4/Logo.png" class="center" alt="Logo" height="250px" width="350px">
+        </div>
+        <div class="box box2 h2">
+            <nav>
+                <ul>
+                    <li>
+                        <% if(title == "Home"){  %>
+                          <a class="nav-link active" href="/">Home</a>
+                        <% } else { %>  
+                          <a class="nav-link" href="/">Home</a>
+                        <% } %>
+                      </li>
+                      <li class="nav-item">
+                        <% if(title == "Projects"){  %>
+                          <a class="nav-link active" href="/projects">Projects</a>
+                        <% } else { %>  
+                          <a class="nav-link" href="/projects">Projects</a>
+                        <% } %>
+                      </li>
+                      <li class="nav-item">
+                        <% if(title == "Services"){  %>
+                          <a class="nav-link active" href="/services">Services</a>
+                        <% } else { %>  
+                          <a class="nav-link" href="/services">Services</a>
+                        <% } %>
+                      </li>
+                      <li class="nav-item">
+                        <% if(title == "Aboutme"){  %>
+                          <a class="nav-link active" href="/about">About Me</a>
+                        <% } else { %>  
+                          <a class="nav-link" href="/about">About Me</a>
+                        <% } %>
+                      </li>
+                      <li class="nav-item">
+                        <% if(title == "Contact"){  %>
+                          <a class="nav-link active" href="/contact">Contact</a>
+                        <% } else { %>  
+                          <a class="nav-link" href="/contact">Contact</a>
+                        <% } %>
+                      </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <hr style="border-style: solid; border-color: rgb(255, 255, 98); border-radius: 2px; ">
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;

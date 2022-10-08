@@ -11,15 +11,17 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); //ejs to creat html file
+//for public sent to client side,
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules'))); //consider take file from node_modules
 
-app.use('/', indexRouter);
+app.use('/', indexRouter);//run index in route
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

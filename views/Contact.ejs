@@ -1,0 +1,48 @@
+<% include partials/header2.ejs %>
+
+   
+
+    <% if(title == "Contact"){  %>
+        <div class="containter3">
+            <div class="box box1">
+                
+                <h1>My Contanct Information</h1>
+                <div class="center2">
+                <p>My Name: Eddie</p>
+                <P>Phone Number: 6478888822</P>
+                <p>Email: aassddff@gmail.com</p>
+                <p>Address: 4312 Progress Rd, Markham, ON</p>
+                <p>Fax Number: 777222777</p>
+                <p>Working Hours: 9:00 AM - 5:00 PM</p>
+                <P>Monday to Friday</P>
+                </div>
+            </div>
+            <div class="box box2">
+                <h1>Your Contanct Information</h1>
+                <div class="center3">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="Number">Phone Number:</label>
+                <input type="text" id="Number" name="Number"><br><br>
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email"><br><br>
+                <label for="Message">Message:</label><br><br>
+                <textarea name="Message" cols="40" rows="5"></textarea><br><br>
+    
+                
+                <a class="nav-link" href="/">
+                    
+                    <button>Submit</button>
+                
+                </a>
+                </form>
+                </div>
+            </div>
+    
+        </div>
+
+        <% } %>
+
+    <% include partials/footer.ejs %>
