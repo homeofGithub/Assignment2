@@ -1,6 +1,7 @@
-// Student ID: 1234568796
-// Name: Julio Vinicius
-// Data: Oct 01, 2022
+// Student ID: 300952167
+// Name: Yi Chen
+// Data: Oct 07, 2022
+// File Name: index.js
 
 var express = require('express');
 var router = express.Router();
@@ -11,7 +12,7 @@ router.get('/', function(req, res, next) {
     'index', 
     { 
       title: 'Home', 
-      name: 'Julio' 
+      
     }
   );
 });
@@ -40,7 +41,7 @@ router.get('/about', function(req, res, next) {
     'Aboutme', 
     { 
       title: 'Aboutme',
-      name: 'Julio' 
+     
     }
   );
 });
@@ -50,7 +51,7 @@ router.get('/contact', function(req, res, next) {
     'Contact', 
     { 
       title: 'Contact',
-      name: 'Julio' 
+      
     }
   );
 });

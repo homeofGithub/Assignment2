@@ -1,3 +1,8 @@
+// Student ID: 300952167
+// Name: Yi Chen
+// Data: Oct 07, 2022
+// File Name: users.js
+
 var express = require('express');
 var router = express.Router();
 

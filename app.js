@@ -1,3 +1,8 @@
+// Student ID: 300952167
+// Name: Yi Chen
+// Data: Oct 07, 2022
+// File Name: app.js
+
 var createError = require('http-errors'); // handle error
 var express = require('express');// catch path for folder, 
 var path = require('path');
