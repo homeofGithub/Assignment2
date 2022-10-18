@@ -4,6 +4,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
   </head>
   <body>
     <!-- Navbar with bootstrap -->
@@ -45,6 +46,15 @@
               <a class="nav-link" href="/contact">Contact</a>
             <% } %>
           </li>
+          <li class="nav-item">
+            <% if (title == "Inventory List") { %>
+                <a class="nav-link active" href="/inventory/list">
+            <% } else { %>
+                <a class="nav-link" href="/inventory/list">
+            <% } %>            
+                <i class="fas fa-home"></i> Inventory List </a>
+            </a>
+          </li>   
           <li>
             <img src="https://i.ibb.co/DVvd8K4/Logo.png" style="padding: 10px;" alt="Logo" height="50px" width="50px">
           </li>

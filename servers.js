@@ -4,7 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('../app'); //export
+var dbConfig = require('./config/db')
+var app = require('./config/app'); //export
 var debug = require('debug')('com299assignment1:server');
 var http = require('http');
 
@@ -12,6 +13,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
+var db = dbConfig();
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
