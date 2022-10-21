@@ -3,6 +3,7 @@ exports.home = function(req, res, next) {
       'index', 
       { 
         title: 'Home', 
+        userName: req.user ? req.user.username : ''
       }
     );
   }
@@ -12,6 +13,7 @@ exports.home = function(req, res, next) {
       'Projects', 
       { 
         title: 'Projects',
+        userName: req.user ? req.user.username : ''
       }
     );
   }
@@ -21,6 +23,7 @@ exports.home = function(req, res, next) {
       'Services', 
       { 
         title: 'Services',
+        userName: req.user ? req.user.username : ''
       }
     );
   }
@@ -30,6 +33,7 @@ exports.home = function(req, res, next) {
       'Aboutme', 
       { 
         title: 'Aboutme',
+        userName: req.user ? req.user.username : ''
        
       }
     );
@@ -40,6 +44,7 @@ exports.home = function(req, res, next) {
       'Contact', 
       { 
         title: 'Contact',
+        userName: req.user ? req.user.username : ''
         
       }
     );
