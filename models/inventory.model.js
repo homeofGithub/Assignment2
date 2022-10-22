@@ -8,8 +8,8 @@ let inventoryModel = mongoose.Schema(
         tags: [],
         status: String,
         size: {
-            h: Number,
-            w: Number,
+            h: String,
+            w: String,
             uom: String
         }
     },
