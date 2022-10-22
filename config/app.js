@@ -8,14 +8,28 @@ var express = require('express');// catch path for folder,
 var path = require('path');
 var cookieParser = require('cookie-parser'); //handle cookie
 var logger = require('morgan');// from nodejs
+let session = require('express-session');
+let flash = require('connect-flash');
+let passport = require('passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+
+
+var indexRouter = require('../routes/index');
+var usersRouter = require('../routes/users');
+var inventoryRouter = require('../routes/inventory.router');
+
+
 
 var app = express();
 
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: "sessionSecret"
+}));
+
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs'); //ejs to creat html file
 //for public sent to client side,
 
@@ -23,11 +37,18 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'node_modules'))); //consider take file from node_modules
+app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../node_modules'))); //consider take file from node_modules
+
+// Sets up passport
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 app.use('/', indexRouter);//run index in route
 app.use('/users', usersRouter);
+app.use('/inventory', inventoryRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
