@@ -50,3 +50,15 @@ exports.home = function(req, res, next) {
     );
   }
 
+  exports.contact = function(req, res, next) {
+    res.render(
+      'User', 
+      { 
+        title: 'User',
+        userName: req.user ? req.user.username : ''
+         
+        
+      }
+    );
+  }
+

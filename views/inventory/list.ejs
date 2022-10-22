@@ -18,11 +18,11 @@
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Item</th>
-                    <th class="text-center">Qty</th>
-                    <th class="text-center">Status</th>
-                    <th>Size</th>
-                    <th class="text-center">Tags</th>
+                    <th class="text-center">Contact Name</th>
+                    <th class="text-center">Contact Number</th>
+                    <th class="text-center">Email Address</th>
+                    <th>Address</th>
+                    <th class="text-center">Additional Information</th>
                     <th class="text-center" colspan="2">Actions</th>
                 </tr>
 
@@ -34,9 +34,9 @@
                         <td class="text-center"><%= InventoryList[count].qty %></td>
                         <td class="text-center"><%= InventoryList[count].status %></td>
                         <td>
-                            Hight: <%= InventoryList[count].size.h %><br/>
-                            Width: <%= InventoryList[count].size.w %><br/>
-                            UOM: <%= InventoryList[count].size.uom %><br/>
+                            Street: <%= InventoryList[count].size.h %><br/>
+                            City: <%= InventoryList[count].size.w %><br/>
+                            Postcode: <%= InventoryList[count].size.uom %><br/>
                         </td>
                         <td class="text-center"><%= InventoryList[count].tags %></td>
                         <td class="text-center">
