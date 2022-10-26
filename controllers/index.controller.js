@@ -50,7 +50,7 @@ exports.home = function(req, res, next) {
     );
   }
 
-  exports.contact = function(req, res, next) {
+  exports.User = function(req, res, next) {
     res.render(
       'User', 
       { 
@@ -61,4 +61,6 @@ exports.home = function(req, res, next) {
       }
     );
   }
+
+ 
 

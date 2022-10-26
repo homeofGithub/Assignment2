@@ -53,6 +53,7 @@
                           <a class="nav-link" href="/contact">Contact</a>
                         <% } %>
                       </li>
+                      
                       <li class="nav-item">
                         <% if (title == "Inventory List") { %>
                             <a class="nav-link active" href="/inventory/list">
@@ -76,7 +77,14 @@
                         <% } else { %>
                           <a class="nav-link" href="/users/signin">Signin</a>
                         <% } %>            
-                      </li>    
+                      </li>
+                      <li class="nav-item">
+                          <p><a class="nav-link" href="/users/signup" style="color: black;">                
+                              <i class="fas fa-user-plus"></i> 
+                              Signup
+                          </a></p>
+                      </li>
+                    </li>        
                 </ul>
             </nav>
         </div>
