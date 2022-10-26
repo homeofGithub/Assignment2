@@ -5,7 +5,7 @@
   <!-- Main Content -->
   <main class="container">
     <div class="row">
-        <h1><%= title %></h1>
+        <h1>Business Contacts List</h1>
         <br>
         <div>
             <a href="/inventory/add" class="btn btn-primary align-self-end" role="button">
@@ -15,13 +15,13 @@
         </div>
 
         <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover">
+            <table class="table table-bordered table-striped table-hover myTable">
                 <!-- Header Row-->
                 <tr>
                     <th class="text-center">Contact Name</th>
                     <th class="text-center">Contact Number</th>
                     <th class="text-center">Email Address</th>
-                    <th>Address</th>
+                    <th class="text-center">Working Address</th>
                     <th class="text-center">Additional Information</th>
                     <th class="text-center" colspan="2">Actions</th>
                 </tr>
@@ -48,6 +48,7 @@
                             <i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
+                    
                 <% } %>
             </table>
         </div>
